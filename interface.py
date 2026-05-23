@@ -13,7 +13,8 @@ DB_CONFIG = {
     "user": os.environ["MYSQLUSER"],
     "password": os.environ["MYSQLPASSWORD"],
     "database": os.environ["MYSQLDATABASE"],
-    "port": int(os.environ.get("MYSQLPORT", 3306))
+    "port": int(os.environ.get("MYSQLPORT", 3306)),
+    "connection_timeout": 5
 }
 
 class InterfaceBot(commands.Bot):
